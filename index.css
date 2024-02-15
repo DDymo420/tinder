@@ -1,0 +1,130 @@
+*{
+    padding:0;
+    margin:0;
+    font-family: sans-serif ;
+}
+body{
+    background: white;
+}
+#login{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: forestgreen; */
+    background: url(bg.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow:0px 0px 10px black;
+}
+.center{
+    background: transparent;
+    backdrop-filter: blur(10px);
+    box-shadow:0px 0px 20px white;
+    border-radius:20px;
+    border:2px solid white;
+    width:400px;
+    height:600px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position:relative;
+    left:350px;
+}
+h1{
+    color:white;    
+    font-size:2.6em;
+    position:absolute;
+    top:120px;
+}
+.form{
+    background: transparent;
+    position:relative;
+    height:40px;
+    width:250px;
+    margin-top:20px;
+}
+.form .inpt{
+    color:white;
+    font-size:1.2em;
+    background: transparent;
+    outline:none;
+    border:none;
+    border-bottom:2px solid white;
+    height:38px;
+    width:248px;
+    padding-left: 10px;
+}
+.form .inpt::placeholder{
+    color:white;
+}
+button{
+    position:absolute;
+    bottom:150px;
+    width:180px;
+    height:40px;
+    font-size:1.3em;
+    outline:none;
+    background: lightgrey;
+    transition:.2s;
+    border-radius:50px;
+    border:none;
+    color:black;
+    cursor:pointer;
+}
+button:hover{
+    color:black;
+    background: white;
+    box-shadow:0px 0px 20px white;
+    transform:scale(1.05);
+}
+button:active{
+    transform: scale(.9);
+}
+.topbar{
+    width:100%;
+    position:fixed;
+    z-index:2;
+    top:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    box-shadow:0px 5px 20px -2px black;
+    height:90px;
+}
+.topbar img{
+    width:150px;
+    position:relative;
+    left:355px;
+}
+#info{
+    background: black;
+    height:30vh;
+    position: relative;
+    box-shadow:0px 0px 10px black;
+    display: flex;
+    align-items: center;
+}
+#info img{
+    width:200px;
+    aspect-ratio: 1;
+    border-radius:50%;
+}
+#info p{
+    color:white;
+    font-size:2.2em;
+}
+#info .box{
+    position:absolute;
+    left:325px;
+    background: transparent;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap:50px;
+}
